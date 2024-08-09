@@ -12,9 +12,9 @@ warnings.filterwarnings('ignore')
 import matplotlib.pyplot as plt
 # %matplotlib inline
 
-train_data = pd.read_csv('/Users/vidhiwaghela/Desktop/Yield-Prediction-main/train_data.csv', nrows=300)
-train_weather = pd.read_csv('/Users/vidhiwaghela/Desktop/Yield-Prediction-main/train_weather-1646897968670.csv', nrows=300)
-farm_data = pd.read_csv('/Users/vidhiwaghela/Desktop/Yield-Prediction-main/farm_data-1646897931981.csv', nrows=300)
+train_data = pd.read_csv('/Users/yashas/Desktop/Yield-Prediction-main/train_data.csv', nrows=300)
+train_weather = pd.read_csv('/Users/yashas/Desktop/Yield-Prediction-main/train_weather-1646897968670.csv', nrows=300)
+farm_data = pd.read_csv('/Users/yashas/Desktop/Yield-Prediction-main/farm_data-1646897931981.csv', nrows=300)
 
 train_data.dtypes
 
@@ -454,8 +454,8 @@ Reading the Test Data Files
 """
 
 # Reading the test data files
-test_data = pd.read_csv('/Users/vidhiwaghela/Desktop/Yield-Prediction-main/test_data-1664552867678.csv', nrows=50)
-test_weather = pd.read_csv('/Users/vidhiwaghela/Desktop/Yield-Prediction-main/test_weather-1646897984996-1664552604982.csv', nrows=50)
+test_data = pd.read_csv('/Users/yashas/Desktop/Yield-Prediction-main/test_data-1664552867678.csv', nrows=50)
+test_weather = pd.read_csv('/Users/yashas/Desktop/Yield-Prediction-main/test_weather-1646897984996-1664552604982.csv', nrows=50)
 
 test_data.head()
 
@@ -622,7 +622,7 @@ submission['yield'].plot()
 
 #Converting the Dataframe to a csv file.
 
-submission.to_csv('//Users/vidhiwaghela/Desktop/Yield-Prediction-main/submission.csv', index = None)
+submission.to_csv('//Users/yashas/Desktop/Yield-Prediction-main/submission.csv', index = None)
 
 #Pickle dump
 import pickle 
