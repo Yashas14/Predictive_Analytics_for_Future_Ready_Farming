@@ -39,3 +39,8 @@ We invite you to explore the fascinating world of yield prediction with us. Thro
 By engaging with our project, you're contributing to the evolution of farming practices. Join us on this journey and help make agriculture smarter, more efficient, and sustainable.
 
 Feel free to star this repository if you find our work insightful and helpful. Let's embark on this transformative agricultural expedition together! 🌍🌾
+
+## 👥 Connect With Me:
+
+**Yashas D** [Connect on LinkedIn](https://www.linkedin.com/in/yashasd2004/)
+Feel free to reach out for any questions or collaboration opportunities!
