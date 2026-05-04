@@ -1,0 +1,92 @@
+{
+  "model_version": "1.0.0",
+  "training_date": "2026-05-04T13:37:41.284890",
+  "feature_names": [
+    "farm_area",
+    "temp_obs",
+    "wind_direction",
+    "dew_temp",
+    "pressure_sea_level",
+    "precipitation",
+    "wind_speed",
+    "unix_sec",
+    "num_processing_plants",
+    "ingredient_type",
+    "farming_company",
+    "deidentified_location"
+  ],
+  "metrics": {
+    "train": {
+      "r2_score": 0.9773418404314341,
+      "rmse": 338.51727616839065,
+      "mae": 167.26333793426227,
+      "mse": 114593.94626446646
+    },
+    "test": {
+      "r2_score": 0.894017916948035,
+      "rmse": 736.420350315235,
+      "mae": 344.66426834154043,
+      "mse": 542314.9323584136
+    },
+    "cross_validation": {
+      "cv_r2_mean": 0.9000295422360711,
+      "cv_r2_std": 0.024051470988099205,
+      "cv_rmse_mean": 707.6429651954161,
+      "cv_rmse_std": 91.28665028129228,
+      "cv_mae_mean": 349.1886467680976,
+      "cv_mae_std": 42.03349284263032,
+      "cv_train_r2_mean": 0.9771339999873815
+    },
+    "model_comparison": [
+      {
+        "model": "random_forest",
+        "train_r2": 0.9635621152683815,
+        "test_r2": 0.8789199118793534,
+        "train_rmse": 429.28439443602093,
+        "test_rmse": 787.1290119849308,
+        "train_mae": 217.24188629612684,
+        "test_mae": 399.04629175271367
+      },
+      {
+        "model": "xgboost",
+        "train_r2": 0.9893708319430026,
+        "test_r2": 0.8939637676362052,
+        "train_rmse": 231.85590390002565,
+        "test_rmse": 736.608455520405,
+        "train_mae": 123.13568857298613,
+        "test_mae": 339.9136976688149
+      },
+      {
+        "model": "lightgbm",
+        "train_r2": 0.9668452159921906,
+        "test_r2": 0.8937058625486745,
+        "train_rmse": 409.48841901966074,
+        "test_rmse": 737.5037140947933,
+        "train_mae": 200.77302462770697,
+        "test_mae": 356.9106469320864
+      }
+    ],
+    "feature_importance": {
+      "farm_area": 515.8142492123444,
+      "unix_sec": 306.34951705564674,
+      "pressure_sea_level": 215.3463217200125,
+      "dew_temp": 171.67833033403272,
+      "temp_obs": 162.6785182118846,
+      "wind_direction": 136.0121753930707,
+      "farming_company": 130.69543366287058,
+      "wind_speed": 112.67657996768831,
+      "ingredient_type": 110.67885775338527,
+      "num_processing_plants": 84.72982086458494,
+      "precipitation": 17.0068624632062,
+      "deidentified_location": 0.0
+    },
+    "n_train_samples": 2456,
+    "n_test_samples": 614,
+    "n_features": 12
+  },
+  "pipeline_steps": [
+    "preprocessor",
+    "model"
+  ],
+  "model_type": "VotingRegressor(RF+XGBoost+LightGBM)"
+}

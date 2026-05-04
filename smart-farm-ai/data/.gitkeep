@@ -1,0 +1,5 @@
+# Data directory
+# Place your CSV files here:
+# - train_data.csv (or similar naming)
+# - train_weather-*.csv
+# - farm_data-*.csv

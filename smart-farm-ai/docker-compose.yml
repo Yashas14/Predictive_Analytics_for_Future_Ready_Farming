@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: agrisense-app
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./models:/app/models
+      - ./data:/app/data
+    environment:
+      - MODEL_PATH=/app/models/v1/model.pkl
+      - DATABASE_URL=sqlite:///./predictions.db
+      - LOG_LEVEL=INFO
+      - LOG_FORMAT=json
+      - MODEL_VERSION=1.0.0
+    restart: unless-stopped
