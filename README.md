@@ -322,6 +322,22 @@ Trained on 3,070 records (2,456 train / 614 test) across 12 features:
 4. `dew_temp` — 171.7
 5. `temp_obs` — 162.7
 
+
+<img width="1904" height="902" alt="Screenshot 2026-05-04 174824" src="https://github.com/user-attachments/assets/16c2bb85-e19e-4e26-8660-c16d2839f5be" />
+
+--
+
+<img width="1892" height="897" alt="image" src="https://github.com/user-attachments/assets/4ed4c676-b338-4b99-8255-f219432d89f1" />
+
+--
+
+<img width="1899" height="892" alt="image" src="https://github.com/user-attachments/assets/3009a76c-b02a-44e9-bae1-a014483ef6ad" />
+
+--
+<img width="1889" height="902" alt="image" src="https://github.com/user-attachments/assets/edfee2c9-057e-4ece-bd87-99f7e0d6f7ad" />
+
+--
+
 ---
 
 ## 🔧 Configuration
